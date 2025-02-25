@@ -1,0 +1,17 @@
+{
+	"name": "hono-amplify",
+	"type": "module",
+	"scripts": {
+		"dev": "tsx watch src/index.ts",
+		"build": "npx esbuild --bundle src/index.ts --minify --outfile=.amplify-hosting/compute/default/index.cjs --platform=node"
+	},
+	"dependencies": {
+		"@hono/node-server": "^1.13.8",
+		"hono": "^4.7.2"
+	},
+	"devDependencies": {
+		"@types/node": "^20.11.17",
+		"esbuild": "^0.25.0",
+		"tsx": "^4.7.1"
+	}
+}
